@@ -9,7 +9,7 @@
  */
 ?>
 
-<footer class="footer-container">
+<footer>
 	<div class="footer-grid">
 		<?php dynamic_sidebar( 'footer-widgets' ); ?>
 	</div>

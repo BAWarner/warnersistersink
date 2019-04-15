@@ -7,9 +7,9 @@
 
 @include foundation-global-styles;
 //@include foundation-grid;
-//@include foundation-flex-grid;
+@include foundation-flex-grid;
 
-@include foundation-xy-grid-classes;
+// @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -77,6 +77,7 @@
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
+@import "components/owl-override";
 
 // Templates
 @import "templates/front";

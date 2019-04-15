@@ -1,0 +1,27 @@
+.owl-stage-outer,
+.owl-stage,
+.owl-item{
+    height: 100%;
+}
+
+.owl-carousel{
+    button{
+        &.owl-dot{
+            border: 2px solid $primary-color !important;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-left: 2px;
+            margin-right: 2px;
+            &.active{
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.owl-dots{
+    position: absolute;
+    right: 55px;
+    bottom: 55px;
+}

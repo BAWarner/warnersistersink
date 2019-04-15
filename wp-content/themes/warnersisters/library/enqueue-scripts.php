@@ -57,6 +57,20 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		// Enqueue Foundation scripts
 		wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'app.js' ), array( 'jquery' ), '2.10.4', true );
 
+		// Owl
+		wp_register_script('owl-js', get_stylesheet_directory_uri() . '/src/assets/js/lib/owl/owl.carousel.min.js', array('jquery'), '', true );
+		wp_enqueue_script( 'owl-js' );
+		
+		wp_register_style('owl-theme', get_stylesheet_directory_uri() . '/src/assets/js/lib/owl/owl.theme.default.min.css');
+		wp_enqueue_style('owl-theme');
+		
+		wp_register_style('owl-css', get_stylesheet_directory_uri() . '/src/assets/js/lib/owl/owl.carousel.min.css');
+		wp_enqueue_style('owl-css');
+		
+		// Custom
+		wp_register_script('misc', get_stylesheet_directory_uri() . '/src/assets/js/misc.js', array('jquery'), '0.0.1', true );
+		wp_enqueue_script( 'misc' );
+		
 		// Enqueue FontAwesome from CDN. Uncomment the line below if you need FontAwesome.
 		//wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/5016a31c8c.js', array(), '4.7.0', true );
 
